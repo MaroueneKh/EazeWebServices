@@ -1,0 +1,30 @@
+<extend src="layout.jael">
+  <block name="content">
+    <div class="jumbotron">
+      <div class="container mb-3">
+        <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1 class="display-2">The Best Tech Content</h1>
+          <p class="lead">
+          Your daily source of tutorials, reviews and source material for upcoming tech innovations
+          </p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="row justify-content-sm-center">
+      <div class="col-sm-8 mt-2 mb-4" if=articles.length == 0>
+        <p class="lead text-center">No articles added. <a href="/new">Add new</a></p>
+      </div>
+
+      <div class="col-sm-8 mt-2 mb-4" for-each=articles as="article">
+        <h2><a href="/posts/" + article.slug>{{ article.title }}</a></h2>
+        <p><span class="badge badge-info">{{ article.fullDate }}</span></p>
+        <p><a href="/posts/" + article.slug>Read full article</a></p>
+      </div>
+    </div>
+    </div>
+  </block>
+</extend>
