@@ -46,13 +46,18 @@ To contribute to EazeWebServices
  follow these steps:
 
 Fork this repository.
-Create a branch: git checkout -b eaze.
+Create a branch: git checkout -b EazeWebServices.
+
 Make your changes and commit them: git commit -m '<commit_message>'
+
 Push to the original branch: git push origin eaze
+
 Create the pull request.
+
 Alternatively see the GitHub documentation on creating a pull request.
 
 Contributors
+
 Thanks to the following people who have contributed to this project:
 
 @AhmedTlili25
